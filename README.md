@@ -22,13 +22,13 @@ This repository contains the code and data for our systematic evaluation of ense
 ```
 .
 ├── data/
-│   └── balanced-reviews.csv.zip          # HARD dataset (compressed)
+│   └── balanced-reviews.csv.zip                    # HARD dataset (compressed)
 ├── code/
-│   ├── experiment1_main.py               # Main ensemble experiments
-│   └── experiment2_lexicon.py            # Lexicon augmentation experiments
+│   ├── Arabic_Sentiment_Analysis.ipynb             # Main ensemble experiments
+│   └── Hybrid_Sentiment_MultiLexicon_FINAL.ipynb   # Lexicon augmentation experiments
 ├── AnnotatedErrors/
-│   ├── FP_annotations_camelbert_seed42.csv    # False Positive annotations
-│   └── FN_annotations_camelbert_seed42.csv    # False Negative annotations
+│   ├── FP_annotations_camelbert_seed42.csv         # False Positive annotations
+│   └── FN_annotations_camelbert_seed42.csv         # False Negative annotations
 └── README.md
 ```
 
@@ -59,7 +59,7 @@ The `data/` folder contains the balanced HARD (Hotel Arabic Reviews Dataset) use
 
 ### Main Experiments (`code/`)
 
-#### 1. **experiment1_main.py**
+#### 1. **Arabic_Sentiment_Analysis.ipynb**
 Main ensemble learning experiments comparing:
 - **Individual Models**: AraBERT, MARBERT, XLM-RoBERTa, CAMeLBERT
 - **Ensemble Methods**: Hard Voting, Soft Voting, Weighted Voting, Stacking
@@ -74,7 +74,7 @@ Main ensemble learning experiments comparing:
 | CAMeLBERT | 96.24 ± 0.19 | 96.26 ± 0.18 | 96.24 ± 0.19 | 96.24 ± 0.19 |
 | **Stacking** | **96.40 ± 0.14** | **96.40 ± 0.13** | **96.40 ± 0.14** | **96.40 ± 0.14** |
 
-#### 2. **experiment2_lexicon.py**
+#### 2. **Hybrid_Sentiment_MultiLexicon_FINAL.ipynb**
 Lexicon augmentation experiments testing:
 - **LABR Lexicon**: General-purpose (4,366 entries)
 - **Custom Hotel Lexicon**: Domain-specific (2,000 entries)
