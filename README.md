@@ -114,35 +114,6 @@ scikit-learn
 pandas
 numpy
 ```
-
-### Installation
-```bash
-# Clone the repository
-git clone https://github.com/malhawarat/Ens_Learning_Arabic_Sentiment.git
-cd Ens_Learning_Arabic_Sentiment
-
-# Install dependencies
-pip install torch transformers scikit-learn pandas numpy
-
-# Extract dataset
-cd data
-unzip balanced-reviews.csv.zip
-cd ..
-```
-
-### Running Experiments
-
-#### Main Ensemble Experiments
-```bash
-cd code
-python experiment1_main.py
-```
-
-#### Lexicon Augmentation Experiments
-```bash
-python experiment2_lexicon.py
-```
-
 ### Expected Runtime
 - Individual model training: ~1.46 hours per seed (NVIDIA A100 GPU)
 - Total training time (4 models × 5 seeds): ~29.45 hours
@@ -174,9 +145,9 @@ If you use this code or data in your research, please cite:
 @article{alhawarat2025ensemble,
   title={Ensemble Learning for Arabic Sentiment Analysis: A Systematic Comparison Using Transformer-Based Models},
   author={Alhawarat, Mohammad},
-  journal={PeerJ Computer Science},
+  journal={Under Review},
   year={2025},
-  publisher={PeerJ Inc.}
+  publisher={Under Review}
 }
 ```
 
