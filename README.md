@@ -137,20 +137,6 @@ numpy
 - **XLM-RoBERTa**: xlm-roberta-base
 - **CAMeLBERT**: CAMeL-Lab/bert-base-arabic-camelbert-msa
 
-## 📄 Citation
-
-If you use this code or data in your research, please cite:
-
-```bibtex
-@article{alhawarat2025ensemble,
-  title={Ensemble Learning for Arabic Sentiment Analysis: A Systematic Comparison Using Transformer-Based Models},
-  author={Alhawarat, Mohammad},
-  journal={Under Review},
-  year={2025},
-  publisher={Under Review}
-}
-```
-
 ## 👤 Author
 
 **Mohammad Alhawarat**  
