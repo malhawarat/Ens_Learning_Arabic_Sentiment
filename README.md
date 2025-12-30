@@ -530,8 +530,8 @@ Ens_Learning_Arabic_Sentiment/
 │   ├── Arabic_Sentiment_Analysis_SingleRuns.ipynb    # Original notebook (Experiment 1)
 │   └── Hybrid_Sentiment_MultiLexicon.ipynb           # Original notebook (Experiment 2)
 ├── AnnotatedErrors/
-│   ├── FP_annotations_camelbert_seed42.csv    # False Positive annotations
-│   └── FN_annotations_camelbert_seed42.csv    # False Negative annotations
+│   ├── camelbert_seed42_FP_Annotated.xlsx    # False Positive annotations 
+│   └── camelbert_seed42_FN_Annotated.xlsx    # False Negative annotations
 ├── results/                              # Output directory (created on run)
 ├── checkpoints/                          # Model checkpoints (created on run)
 ├── requirements.txt                      # Python dependencies
@@ -546,18 +546,6 @@ Ens_Learning_Arabic_Sentiment/
 ---
 
 ## Citations
-
-If you use this code or dataset in your research, please cite:
-
-```bibtex
-@article{alhawarat2025ensemble,
-  title={Ensemble Learning for Arabic Sentiment Analysis: A Systematic Comparison Using Transformer-Based Models},
-  author={Alhawarat, Mohammad},
-  journal={PeerJ Computer Science},
-  year={2025},
-  publisher={PeerJ Inc.}
-}
-```
 
 **Dataset Citation**:
 ```bibtex
