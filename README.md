@@ -17,7 +17,7 @@ This repository contains the complete implementation code, datasets, and error a
 ## Dataset Information
 
 ### HARD (Hotel Arabic Reviews Dataset)
-- **Location**: `data/balanced-reviews.csv.zip`
+- **Location**: `data/balanced-reviews.zip`
 - **Description**: Balanced subset of hotel reviews from Booking.com
 - **Total Reviews**: 105,698 reviews
 - **Classes**: Binary sentiment (Positive/Negative)
@@ -271,7 +271,7 @@ pip install -r requirements.txt
 #### Step 4: Extract Dataset
 ```bash
 cd data
-unzip balanced-reviews.csv.zip
+unzip balanced-reviews.zip
 cd ..
 ```
 
@@ -522,7 +522,7 @@ export TRANSFORMERS_OFFLINE=1
 ```
 Ens_Learning_Arabic_Sentiment/
 ├── data/
-│   └── balanced-reviews.csv.zip          # HARD dataset (compressed)
+│   └── balanced-reviews.zip              # HARD dataset (compressed)
 ├── code/
 │   ├── experiment1_main.py               # Main ensemble experiments (converted from notebook)
 │   ├── experiment2_lexicon.py            # Lexicon augmentation (converted from notebook)
@@ -535,8 +535,8 @@ Ens_Learning_Arabic_Sentiment/
 ├── results/                              # Output directory (created on run)
 ├── checkpoints/                          # Model checkpoints (created on run)
 ├── requirements.txt                      # Python dependencies
-├── LICENSE                              # MIT License
-└── README.md                            # This file
+├── LICENSE                               # MIT License
+└── README.md                             # This file
 ```
 
 **Note**: The code is provided in two formats:
