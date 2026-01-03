@@ -83,11 +83,11 @@ Full dependencies in `requirements.txt`
 
 **This Work:**
 ```bibtex
-@article{alhawarat2025ensemble,
+@article{alhawarat2026ensemble,
   title={Ensemble Learning for Arabic Sentiment Analysis: A Systematic Comparison Using Transformer-Based Models},
   author={Alhawarat, Mohammad},
   journal={PeerJ Computer Science},
-  year={2025},
+  year={2026},
   note={Under Review}
 }
 ```
