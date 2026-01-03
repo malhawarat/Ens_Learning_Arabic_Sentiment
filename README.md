@@ -140,7 +140,7 @@ This repository contains the complete implementation code, datasets, and error a
 - **Files**:
   - `FP_annotations_camelbert_seed42.csv`: 260 False Positive samples with manual annotations
   - `FN_annotations_camelbert_seed42.csv`: 141 False Negative samples with manual annotations
-- **Purpose**: Label noise analysis revealing 43.3% of errors stem from dataset quality issues
+- **Purpose**: Label noise analysis reveals that 43.3% of errors stem from dataset quality issues
 - **Annotation Protocol**: Two independent annotators with reconciliation
 
 ---
@@ -378,7 +378,7 @@ python experiment1_main.py
 
 **What happens**:
 - Downloads pre-trained models from Hugging Face
-- Fine-tunes 4 models across 5 seeds (⏱️ ~29 hours on A100)
+- Fine-tunes 4 models across 5 seeds (~29 hours on A100)
 - Trains ensemble methods
 - Evaluates on test set
 - Performs statistical significance testing
