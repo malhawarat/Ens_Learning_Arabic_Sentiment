@@ -4,6 +4,101 @@
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-brightgreen)](https://www.python.org/)
 
+### ✅ 1. Title
+**Ensemble Learning for Arabic Sentiment Analysis: A Systematic Comparison Using Transformer-Based Models**
+
+### ✅ 2. Description  
+Systematic evaluation of ensemble learning techniques (Hard Voting, Soft Voting, Weighted Voting, Stacking) combining four transformer models (AraBERT, MARBERT, XLM-RoBERTa, CAMeLBERT) for Arabic sentiment analysis on the HARD dataset.
+
+### ✅ 3. Dataset Information
+- **Name:** Hotel Arabic Reviews Dataset (HARD)
+- **Size:** 105,698 reviews (binary sentiment)
+- **Split:** 80% train / 10% validation / 10% test
+- **Location:** `data/balanced-reviews.zip`
+- **Source:** Elnagar et al. (2018) - See [Citations](#citations) below
+
+### ✅ 4. Code Information
+- **experiment1_main.py:** Main ensemble experiments (5 seeds, 4 models, 4 ensemble methods)
+- **experiment2_lexicon.py:** Lexicon augmentation experiments
+- **analyze_errors.py:** Error annotation analysis
+- **Jupyter Notebooks:** Original Google Colab notebooks included
+- **Annotated Errors:** Manual annotations of 401 high-confidence errors
+
+### ✅ 5. Usage Instructions
+
+**Quick Start:**
+```bash
+# Clone repository
+git clone https://github.com/malhawarat/Ens_Learning_Arabic_Sentiment.git
+cd Ens_Learning_Arabic_Sentiment
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Extract dataset
+cd data && unzip balanced-reviews.zip && cd ..
+
+# Run main experiments
+cd code && python experiment1_main.py
+```
+
+**Detailed instructions:** See [Usage Instructions](#usage-instructions) section below.
+
+### ✅ 6. Requirements
+```
+Python >= 3.8
+PyTorch >= 1.10.0
+transformers >= 4.18.0
+scikit-learn >= 1.0.0
+pandas, numpy, scipy, matplotlib, seaborn
+```
+
+Full dependencies in `requirements.txt`
+
+### ✅ 7. Methodology
+
+**Experimental Pipeline:**
+1. **Data Preprocessing:** Load HARD dataset, normalize Arabic text, create stratified splits
+2. **Model Training:** Fine-tune 4 transformer models across 5 random seeds
+3. **Ensemble Construction:** Implement 4 ensemble strategies (Hard/Soft/Weighted Voting, Stacking)
+4. **Evaluation:** Compute F1-score, accuracy, precision, recall on test set
+5. **Statistical Testing:** Paired t-tests for significance (α=0.05)
+6. **Error Analysis:** Manual annotation of high-confidence errors
+
+**Runtime:** ~29 hours on NVIDIA A100 GPU for complete 5-seed evaluation
+
+### ✅ 8. Citations
+
+**Dataset:**
+```bibtex
+@incollection{elnagar2018hotel,
+  title={Hotel Arabic-Reviews Dataset Construction for Sentiment Analysis Applications},
+  author={Elnagar, Ashraf and Khalifa, Yasmin S and Einea, Anas},
+  booktitle={Intelligent Natural Language Processing: Trends and Applications},
+  pages={35--52},
+  publisher={Springer},
+  year={2018}
+}
+```
+
+**This Work:**
+```bibtex
+@article{alhawarat2024ensemble,
+  title={Ensemble Learning for Arabic Sentiment Analysis: A Systematic Comparison Using Transformer-Based Models},
+  author={Alhawarat, Mohammad},
+  journal={PeerJ Computer Science},
+  year={2024},
+  note={Under Review}
+}
+```
+
+### ✅ 9. License & Contribution Guidelines
+- **License:** MIT License (see [LICENSE](LICENSE))
+- **Contributions:** Welcome via pull requests
+- **Issues:** Report via [GitHub Issues](https://github.com/malhawarat/Ens_Learning_Arabic_Sentiment/issues)
+
+---
+
 ## Title
 **Ensemble Learning for Arabic Sentiment Analysis: A Systematic Comparison Using Transformer-Based Models**
 
