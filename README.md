@@ -1,6 +1,5 @@
 # Ensemble Learning for Arabic Sentiment Analysis
 
-[![Paper](https://img.shields.io/badge/Paper-PeerJ%20CS-blue)](https://peerj.com/computer-science/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-brightgreen)](https://www.python.org/)
 
@@ -86,7 +85,7 @@ Full dependencies in `requirements.txt`
 @article{alhawarat2026ensemble,
   title={Ensemble Learning for Arabic Sentiment Analysis: A Systematic Comparison Using Transformer-Based Models},
   author={Alhawarat, Mohammad},
-  journal={PeerJ Computer Science},
+  journal={BDCC},
   year={2026},
   note={Under Review}
 }
