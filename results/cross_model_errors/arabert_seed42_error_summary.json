@@ -1,0 +1,11 @@
+{
+  "total_samples": 10570,
+  "correct": 10133,
+  "false_positives": 264,
+  "false_negatives": 173,
+  "accuracy": 0.9586565752128666,
+  "fp_rate": 0.024976348155156102,
+  "fn_rate": 0.016367076631977295,
+  "high_conf_fp": 249,
+  "high_conf_fn": 154
+}

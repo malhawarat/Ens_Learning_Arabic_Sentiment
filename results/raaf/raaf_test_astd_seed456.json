@@ -1,0 +1,13 @@
+{
+  "accuracy": 0.8884297520661157,
+  "precision": 0.8731601731601732,
+  "recall": 0.8706222639149468,
+  "f1": 0.8718697911559956,
+  "register_prediction_accuracy": 0.9958677685950413,
+  "mean_attention_weights": {
+    "arabert": 0.16780081391334534,
+    "marbert": 0.2643264830112457,
+    "xlm-roberta": 0.08235479146242142,
+    "camelbert": 0.4855178892612457
+  }
+}
