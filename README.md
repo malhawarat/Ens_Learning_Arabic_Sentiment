@@ -54,13 +54,16 @@ A systematic empirical and theoretical study of ensemble learning for Arabic sen
 
 | File | Purpose |
 |---|---|
-| `code/experiment1_main.py`, `code/Arabic_Sentiment_Analysis_SingleRuns.ipynb` | Main ensemble experiments: 4 backbones x 5 seeds x 4 combination rules on HARD |
-| `code/experiment2_lexicon.py`, `code/Hybrid_Sentiment_MultiLexicon.ipynb` | Lexicon augmentation experiments (LABR, Custom Hotel lexicons) |
-| `code/analyze_errors.py` | Error annotation reconciliation and Cohen's Kappa computation |
+| `code/Arabic_Sentiment_Analysis_SingleRuns.ipynb` | Main ensemble experiments: 4 backbones x 5 seeds x 4 combination rules on HARD |
+| `code/Hybrid_Sentiment_MultiLexicon.ipynb` | Lexicon augmentation experiments (LABR, Custom Hotel lexicons) |
 | `code/linguistic_marker_analysis.ipynb` | Automated structural/linguistic tagging of confirmed model errors |
 | `code/astd_arsas_replication.ipynb` | Cross-dataset replication pipeline: data preparation, training, and evaluation on ASTD and ArSAS |
 | `code/raaf_architecture.ipynb` | RAAF architecture, register-balanced pooling training run, and mechanism tests (P1-P3) |
 | `code/raaf_ablation_unbalanced.ipynb` | RAAF pooling ablation (unbalanced pooling), isolating the training-data confound |
+
+All code is provided as the original Jupyter/Colab notebooks used to produce the results in this
+repository, rather than as separately maintained standalone scripts, so there is a single
+authoritative source for each result with no risk of the two drifting out of sync.
 
 **Models evaluated:**
 - **AraBERT** (`aubmindlab/bert-base-arabert`): trained on 77GB Arabic text with Farasa segmentation, ~135M parameters
@@ -105,11 +108,8 @@ Ens_Learning_Arabic_Sentiment/
 ├── data/
 │   └── balanced-reviews.zip                       # HARD dataset (compressed; ASTD/ArSAS not redistributed, see above)
 ├── code/
-│   ├── experiment1_main.py                        # Main ensemble experiments
-│   ├── experiment2_lexicon.py                      # Lexicon augmentation
-│   ├── analyze_errors.py                           # Error annotation + Cohen's Kappa
-│   ├── Arabic_Sentiment_Analysis_SingleRuns.ipynb  # Original notebook, Experiment 1
-│   ├── Hybrid_Sentiment_MultiLexicon.ipynb         # Original notebook, Experiment 2
+│   ├── Arabic_Sentiment_Analysis_SingleRuns.ipynb  # Main ensemble experiments (Experiment 1)
+│   ├── Hybrid_Sentiment_MultiLexicon.ipynb         # Lexicon augmentation (Experiment 2)
 │   ├── linguistic_marker_analysis.ipynb            # Structural error-tagging
 │   ├── astd_arsas_replication.ipynb                # Cross-dataset replication
 │   ├── raaf_architecture.ipynb                     # RAAF (register-balanced pooling)
@@ -143,17 +143,16 @@ pip install -r requirements.txt
 # Extract HARD dataset
 cd data && unzip balanced-reviews.zip && cd ..
 
-# Reproduce the main ensemble experiments (~29 hours on an A100; results already provided in results/hard/)
-cd code && python experiment1_main.py
-
-# Reproduce lexicon augmentation (~2-3 hours; results already provided)
-python experiment2_lexicon.py
-
-# Reproduce error annotation analysis, including Cohen's Kappa (< 1 minute)
-python analyze_errors.py
 ```
 
-The Jupyter notebooks in `code/` are the original Google Colab notebooks (with Google Drive mount cells) for the cross-dataset replication and RAAF experiments; they require a Colab or local GPU environment. See in-notebook markdown for setup instructions, including the resumable/checkpointed design used because these experiments were run on free-tier Colab T4 GPUs.
+All experiments are provided as the original Google Colab notebooks (with Google Drive mount
+cells) used to produce every result in this repository -- there are no separately maintained
+`.py` scripts, so there is exactly one version of each experiment's code, with no risk of a
+script and a notebook silently drifting apart. Open a notebook in `code/` in Colab (or locally
+with a GPU) and run cells sequentially; see in-notebook markdown for setup instructions,
+including the resumable/checkpointed design used because these experiments were run on
+free-tier Colab T4 GPUs. All results referenced by the manuscript are already provided in
+`results/`, so re-running is only necessary to reproduce, not to obtain, the reported numbers.
 
 ## Requirements
 
