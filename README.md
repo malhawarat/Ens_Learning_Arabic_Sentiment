@@ -2,7 +2,7 @@
 
 Experiment notebooks, result files, and error annotations accompanying the manuscript:
 
-> **Quantifying the Annotation Ceiling in Arabic Sentiment Benchmarks: A Reconciled Noise Audit of HARD with Cross-Resource Replication on ASTD and ArSAS**
+> **Label Noise Sets the Accuracy Ceiling in Arabic Sentiment Benchmarks: An Error Audit of HARD with Replication on ASTD and ArSAS**
 > Mohammad O. Alhawarat, Ayman J. Alnsour, Khalil M. Abdelnaby, Mohammed A. F. Al-Husainy
 > Al-Ahliyya Amman University (Jordan) and Al-Azhar University (Egypt)
 > *Manuscript in preparation for submission; this README will be updated with the published reference.*
@@ -107,8 +107,8 @@ Until the paper is published, please cite the repository:
 
 ```
 Alhawarat, M. O., Alnsour, A. J., Abdelnaby, K. M., & Al-Husainy, M. A. F.
-Quantifying the Annotation Ceiling in Arabic Sentiment Benchmarks:
-A Reconciled Noise Audit of HARD with Cross-Resource Replication on ASTD and ArSAS.
+Label Noise Sets the Accuracy Ceiling in Arabic Sentiment Benchmarks:
+An Error Audit of HARD with Replication on ASTD and ArSAS.
 Code and annotations: https://github.com/malhawarat/Ens_Learning_Arabic_Sentiment
 ```
 
